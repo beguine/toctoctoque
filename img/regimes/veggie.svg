@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   id="svg4263"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   viewBox="0 0 64 64"
+   inkscape:export-filename="C:\Users\emile\Desktop\SÉMINAIRE TAL\graphismes\allergenes\lactose_sq.png"
+   inkscape:export-xdpi="105.46875"
+   inkscape:export-ydpi="105.46875"
+   sodipodi:docname="veggie.svg">
+  <defs
+     id="defs4265" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.7781746"
+     inkscape:cx="29.122225"
+     inkscape:cy="24.985701"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-others="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1474"
+     inkscape:window-height="841"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:snap-global="true" />
+  <metadata
+     id="metadata4268">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="opacity:0.33200001;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.4437499;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 37.107422 11.230469 L 41.146484 19.541016 L 35.046875 21.503906 C 40.419856 36.309156 36.03883 21.823883 36.238281 30.261719 L 22.951172 44.533203 L 25.839844 47.419922 L 15.443359 48.333984 L 31.0625 63.953125 L 31.109375 64 L 64 64 L 64 37.537109 L 63.554688 37.091797 L 46.552734 17.914062 L 37.107422 11.230469 z "
+       id="rect4557" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.34546471;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 37.106735,11.230146 a 12.380321,12.406969 70.81249 0 1 -7.979207,14.640388 12.380321,12.406969 70.81249 0 0 -7.64921,15.770152 12.380321,12.406969 70.81249 0 0 1.473962,2.89122 c 11.788196,-0.570203 18.345813,-12.677125 18.738311,-23.870837 2.554117,8.351078 -3.889176,25.160524 -16.399808,26.436094 -5.437791,0.408936 -8.492159,0.85371 -9.848,1.237078 l 1.206702,1.60151 c 2.333265,-0.348447 6.525813,-0.734756 10.617368,-1.506361 a 12.380321,12.406969 70.81249 0 0 9.997817,0.828095 12.380321,12.406969 70.81249 0 0 0.992088,-0.402901 20.09861,20.141875 70.81249 0 0 11.425193,-25.19904 20.09861,20.141875 70.81249 0 0 -12.575216,-12.425398 z"
+       id="path4530"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\emile\Desktop\SÉMINAIRE TAL\graphismes\regimes\vegetarien.png"
+       inkscape:export-xdpi="125"
+       inkscape:export-ydpi="125" />
+  </g>
+</svg>
