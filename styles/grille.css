@@ -1,0 +1,127 @@
+/* Grille issue du framework Skeleton
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.conteneur {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+.clearfix {display: inline-block;}
+
+.colonne,
+.colonnes,
+.thumbnail {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+.thumbnail{
+  margin-right: 20%;
+  margin-top: 20%;
+}
+
+.conteneur-res{
+	margin: auto;
+	padding: 20px 0px 20px 0px;
+	width:100%;
+}
+
+.conteneur:after,
+.rangee:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+  
+/* Écrans de plus de 400px de large */
+@media (min-width: 400px) {
+  .conteneur {
+    width: 85%;
+    padding: 0; }
+}
+
+/* Écrans de plus de 550px de large */
+@media (min-width: 550px) {
+  .conteneur {
+    width: 80%; }
+  .colonne,
+  .colonnes {
+    margin-left: 4%; }
+  .colonne:first-child,
+  .colonnes:first-child {
+    margin-left: 0; }
+
+	/*
+		Le principe de la grille :
+		
+		| une	<- | ->											onze	|
+		| deux		<- | ->										dix		|
+		| trois			<- | ->									neuf	|
+		| quatre			<- | ->								huit	|
+		| cinq					<- | ->							sept	|
+		| six						<- | ->						six		|
+		| sept							<- | ->					cinq	|
+		| huit								<- | ->				quatre	|
+		| neuf									<- | ->			trois	|
+		| dix										<- | ->		deux	|
+		| onze											<- | ->	 une	|
+	
+	*/
+	
+  .une.colonne,
+  .une.colonnes                    { width: 4.66666666667%; }
+  .deux.colonnes                    { width: 13.3333333333%; }
+  .trois.colonnes                  { width: 22%;            }
+  .quatre.colonnes                   { width: 30.6666666667%; }
+  .cinq.colonnes                   { width: 39.3333333333%; }
+  .six.colonnes                    { width: 48%;            }
+  .sept.colonnes                  { width: 56.6666666667%; }
+  .huit.colonnes                  { width: 65.3333333333%; }
+  .neuf.colonnes                   { width: 74.0%;          }
+  .dix.colonnes                    { width: 82.6666666667%; }
+  .onze.colonnes                 { width: 91.3333333333%; }
+  .douze.colonnes                 { width: 100%; }
+
+  .un-tiers.colonne               { width: 30.6666666667%; }
+  .deux-tiers.colonne              { width: 65.3333333333%; }
+
+  .une-demie.colonne                { width: 48%; }
+
+  /* Offsets */
+  .décalage-une.colonne,
+  .décalage-une.colonnes          { margin-left: 8.66666666667%; }
+  .décalage-deux.colonne,
+  .décalage-deux.colonnes          { margin-left: 17.3333333333%; }
+  .décalage-trois.colonne,
+  .décalage-trois.colonnes        { margin-left: 26%;            }
+  .décalage-quatre.colonne,
+  .décalage-quatre.colonnes         { margin-left: 34.6666666667%; }
+  .décalage-cinq.colonne,
+  .décalage-cinq.colonnes         { margin-left: 43.3333333333%; }
+  .décalage-six.colonne,
+  .décalage-six.colonnes          { margin-left: 52%;            }
+  .décalage-sept.colonne,
+  .décalage-sept.colonnes        { margin-left: 60.6666666667%; }
+  .décalage-huit.colonne,
+  .décalage-huit.colonnes        { margin-left: 69.3333333333%; }
+  .décalage-neuf.colonne,
+  .décalage-neuf.colonnes         { margin-left: 78.0%; float: left; }
+  .décalage-dix.colonne,
+  .décalage-dix.colonnes          { margin-left: 86.6666666667%; }
+  .décalage-onze.colonne,
+  .décalage-onze.colonnes       { margin-left: 95.3333333333%; }
+
+  .décalage-un-tiers.colonne,
+  .décalage-un-tiers.colonnes    { margin-left: 34.6666666667%; }
+  .décalage-deux-tiers.colonne,
+  .décalage-deux-tiers.colonnes   { margin-left: 69.3333333333%; }
+
+  .décalage-une-demie.colonne,
+  .décalage-une-demie.colonnes     { margin-left: 52%; }
+
+}

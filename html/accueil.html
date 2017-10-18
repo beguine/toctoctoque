@@ -1,0 +1,213 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Toc Toc Toque</title>
+		
+		<!-- Grille responsive -->
+		<link type="text/css" rel="stylesheet" href="../styles/grille.css" />
+		
+		<!-- Interface utilisateur (style et icônes) -->
+		<link type="text/css" rel="stylesheet" href="../styles/interface_recherche.css" />
+		<link type="text/css" rel="stylesheet" href="../styles/slides.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+		<!-- Images -->
+		<link type="text/css" rel="stylesheet" href="../styles/icones.css" /><!-- Set  d'icônes -->
+		<link rel="icon" type="image/png" href="../img/logo/favicon.png" /><!-- Favicon -->
+		
+		<!-- Carte du monde -->
+		<link rel="stylesheet" media="all" href="../styles/jquery-jvectormap.css"/>
+		<script src="../js/vendor/jquery-1.8.2.js"></script>
+		<script src="../js/vendor/jquery-jvectormap.min.js"></script>
+		<script src="../js/vendor/jquery-mousewheel.js"></script>
+
+		<script src="../js/assets/jquery-jvectormap-world-mill-en.js"></script>
+		<script src="../js/recettesDuMonde.js"></script>
+		
+		<!-- Wizard -->
+		<link type="text/css" rel="stylesheet" href="../styles/wizard.css"/>
+		<!--<script type="text/javascript" src="../js/vendor/jquery-1.8.2.js"></script> -->
+		<script type="text/javascript" src="../js/wizard.js"></script>
+		
+		<!-- Actions modifiant l'aspect visuel de la page -->
+		<link type="text/css" rel="stylesheet" href="../styles/actions.css" />
+		<script type="text/javascript" src="../js/actions.js"></script>
+	</head>
+	
+	<body>
+	
+		<span id="ecran1"></span>
+		<span id="ecran2"></span>
+		<span id="ecran3"></span>
+		<span id="ecran4"></span>
+		
+		<div id="wrap">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#ecran1"><i class="fa fa-search fa-1x" aria-hidden="true"></i><span>  Recherche simple</span></a></li>
+						<li><a href="#ecran2"><i class="fa fa-sliders fa-1x" aria-hidden="true"></i><span>  Recherche avancée</span></a></li>
+						<li><a href="#ecran3"><i class="fa fa-globe fa-1x" aria-hidden="true"></i><span>  Recettes du monde</span></a></li>
+						<li><a href="#ecran4"><i class="fa fa-magic fa-1x" aria-hidden="true"></i><span>  Wizard</span></a></li>
+					</ul>
+					<div class="lien creation-recette"><a href="../html/creation-recette.html"><i class="fa fa-edit fa-1x" aria-hidden="true"></i><span>  Créez une recette</span></a></div><div></div>
+				</nav>
+			</header>
+			
+			<!-- Écran d'accueil -->
+			<div id="ecran-accueil">
+				<div class="wrapper-recherche">
+					<!-- Logo de l'accueil -->
+					<div class="logo-accueil"><img src="../img/logo/accueil-blanc.svg" alt="TocTocToque" /></div>
+
+					<!-- Champ de recherche [1] -->
+					<div id="champ-input" class="recherche">
+						<input id="positive" type="text" name="ChampRecherchePrincipale"
+						pattern="^[a-zA-Z0-9ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ_- ]$" placeholder="Que désirez-vous manger?" autofocus />
+					</div>
+					
+					<!-- Boutons de recherche --> 
+					<div class="boutons-recherche">
+						<div id="champ-rech-av" class="recherche">
+							<a href="#ecran2"><button class="circulaire" type="button" name="MontrerRechercheAvancee" title="Recherche avancée" alt="+">
+							<i class="fa fa-sliders fa-2x" aria-hidden="true"></i></button></a>
+						</div>
+						
+						<!-- Lancer la recherche /!\ équivalent dans la recherche avancée -->
+						<div id="bouton-lancer" class="recherche">
+							<a href="resultats.html"><button type="submit" class="circulaire" name="LancerRecherche" title="Lancer la recherche" alt="Go!" onclick="deploie_menu('footer')">
+							<i class="fa fa-search fa-2x" aria-hidden="true"></i></button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / écran d'accueil -->
+			
+			<!-- Recherche avancée -->
+			<div id="recherche-avancee">
+				<div id="contenu recherche-avancee">
+					<form class="recherche avancee">
+						<div class="conteneur-res">
+							<div class="douze colonnes">
+								<!-- Champ de recherche [2] -->
+								<div id="champ-input-av" style="width: 100%">
+									<h1>Inclure des ingrédients</h1>
+									<input id="positive" type="text" name="ChampRechercheAvancee"
+									pattern="^[a-zA-Z0-9ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ_- ]$" placeholder="Ingrédients à inclure..." />
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="huit colonnes">
+							
+								<!-- Ne contenant pas -->
+								<div class="choix">
+									<h1>Exclure des ingrédients</h1>
+									<input id="negative" type="text" name="NeContenantPas" placeholder="Ingrédients à exclure..."></input>
+								</div>
+								
+								<!-- Allergies -->
+								<div class="choix">
+									<h2>En fonction d'allergies ou de régimes spéciaux</h2>
+									<input class="bouton circulaire" type="checkbox" id="Arachides" /><label for="Arachides">Arachides</label>
+									<input class="bouton circulaire" type="checkbox" id="Composes" /><label for="Composes">Composés</label>
+									<input class="bouton circulaire" type="checkbox" id="Crustaces" /><label for="Crustaces">Crustacés</label>
+									<input class="bouton circulaire" type="checkbox" id="Gluten" S/><label for="Gluten">Gluten</label>
+									<input class="bouton circulaire" type="checkbox" id="Fructose" /><label for="Fructose">Fructose</label>
+									<input class="bouton circulaire" type="checkbox" id="Lactose" /><label for="Lactose">Lactose</label>
+									<input class="bouton circulaire" type="checkbox" id="Oeufs" /><label for="Oeufs">Oeufs</label>
+									<input class="bouton circulaire" type="checkbox" id="Ombelliferes" /><label for="Ombelliferes">Ombellifères</label>
+									<input class="bouton circulaire" type="checkbox" id="Sesame" /><label for="Sesame">Sésame</label>
+									<input class="bouton circulaire" type="checkbox" id="Soja" /><label for="Soja">Soja</label>
+									<input class="bouton circulaire" type="checkbox" id="Vegan" /><label for="Vegan">Végétalien</label>
+									<input class="bouton circulaire" type="checkbox" id="Veggie" /><label for="Veggie">Végétarien</label>
+								</div>
+								
+								<!-- Type de plat -->
+								<div class="choix">
+									<h2>En fonction du type de plat</h2>
+									<input class="bouton circulaire" type="checkbox" id="amusegueule" /><label for="amusegueule" style="font-size: 43%">Amuse-gueule</label>
+									<input class="bouton circulaire" type="checkbox" id="entree" /><label for="entree">Entrée</label>
+									<input class="bouton circulaire" type="checkbox" id="boisson" /><label for="boisson">Boisson</label>
+									<input class="bouton circulaire" type="checkbox" id="plat" /><label for="plat">Plat</label>
+									<input class="bouton circulaire" type="checkbox" id="accompagnement" /><label for="accompagnement">Garniture</label>
+									<input class="bouton circulaire" type="checkbox" id="sauce" /><label for="sauce">Sauce</label>
+									<input class="bouton circulaire" type="checkbox" id="dessert" /><label for="dessert">Dessert</label>
+									<input class="bouton circulaire" type="checkbox" id="confiserie" /><label for="confiserie">Confiserie</label>
+								</div>
+
+							</div>
+
+							<div class="quatre colonnes">
+								<h1>Limiter la recherche</h1>
+								<!-- Temps de préparation (deux champs) -->
+								<h2>Temps de préparation (max.)</h2>
+								<input type="number" name="hrs" placeholder="00" value="hrs" step="1" min="0" max="24"
+								pattern="^([0-1]?[0-9]|2[0-4])$" onchange='deux_chiffres(this)'></input>
+								<label> : </label>
+								<input type="number" name="mins" placeholder="05" value="mins" step="5"  min="0" max="59"
+								pattern="^([0-5][0-9])$" onchange='deux_chiffres(this)'></input>
+								
+								<!-- Coût -->
+								<div class="choix">
+									<h2>Coût</h2>
+										<input class="bouton circulaire" type="checkbox" id="BonMarche" checked /><label for="BonMarche">Bon marché</label>
+										<input class="bouton circulaire" type="checkbox" id="Moyen" checked /><label for="Moyen">Moyen</label>
+										<input class="bouton circulaire" type="checkbox" id="AssezCher" checked /><label for="AssezCher">Assez cher</label>
+								</div>
+								
+								<!-- Difficulté -->
+								<div class="choix">
+									<h2>Difficulté</h2>
+										<input class="bouton circulaire" type="checkbox" id="TresFacile" checked /><label for="TresFacile">Très Facile</label>
+										<input class="bouton circulaire" type="checkbox" id="Facile" checked /><label for="Facile">Facile</label>
+										<input class="bouton circulaire" type="checkbox" id="Moyenne" checked /><label for="Moyenne">Moyenne</label>
+										<input class="bouton circulaire" type="checkbox" id="Difficile" checked /><label for="Difficile">Difficile</label>
+								</div>
+								
+								<!-- Lancer la recherche /!\ deuxième ! -->
+								<div class="lancer circulaire">
+									<a href="resultats.html"><button type="submit" name="LancerRecherche" title="Lancer la recherche" alt="Go!" onclick="deploie_menu('footer')">
+									<i class="fa fa-search fa-1x" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Lancer la recherche</button></a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="recettes-du-monde">
+				<div id="map1" class="carte">
+					<div class="groupe-focus">
+						<button id="focus-africa" class="focus africa circulaire">Focus sur l'Afrique</button>
+						<button id="focus-amenord" class="focus amenord circulaire">Focus sur l'Amérique du Nord</button>
+						<button id="focus-amecentral" class="focus amecentral circulaire">Focus sur l'Amérique Centrale</button>
+						<button id="focus-amesud" class="focus amesud circulaire">Focus sur l'Amérique du Sud</button>
+						<button id="focus-europe" class="focus europe circulaire">Focus sur l'Europe</button>
+						<button id="focus-asie" class="focus asie circulaire">Focus sur l'Asie</button>
+						<button id="focus-oceanie" class="focus oceanie circulaire">Focus sur l'Australie et la Nouvelle Zélande</button>
+						<button id="focus-init" class="focus init circulaire">Retour à l'état initial</button>
+					</div>
+				</div>
+			</div>
+			<div id="ecran-wizard">
+				<div class="wizard">
+					<div id="textDiv"></div>
+					<div class='container'></div>
+					<div id='wizard' style="display: inline-flex;"></div>
+					<a href="accueil.html#ecran2"><button class="round button right"><i class="fa fa-magic fa-2x" aria-hidden="true"></i><br />Trouvez-moi une recette !<type="submit" name="LancerRecherche" title="Lancer la recherche" alt="Go!" onclick="deploie_menu('footer')">
+					<script type="text/javascript">
+						var div = document.getElementById("textDiv");
+						div.textContent = "Laissez-vous guider par vos envies et découvrez nos recettes !";
+						var text = div.textContent;
+					</script>
+				</div>
+			</div>
+		</div>
+			<footer id="footer">
+				<div class="logo-footer"><img src="../img/logo/accueil-bleu.svg" alt="TocTocToque" /></div>
+				<div class="nous"><p>Par les étudiants LING 2 MS/LA, 2016</p></div>
+			</footer>
+		<//div><!-- / wrap -->
+	</body>
+</html>

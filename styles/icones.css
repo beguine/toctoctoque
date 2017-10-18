@@ -1,0 +1,66 @@
+/* Liens vers les fichiers image contenus par les boutons */
+
+/* ========== PAGE ACCUEIL ========== */
+/* 1. Coût */
+.recherche.avancee #BonMarche + label { background-image: url(../img/cout/bon_marche.svg); }
+.recherche.avancee #Moyen + label { background-image: url(../img/cout/moyen.svg);}
+.recherche.avancee #AssezCher + label { background-image: url(../img/cout/assez_cher.svg); }
+
+/* 2. Difficulté */
+.recherche.avancee #TresFacile + label { background-image: url(../img/difficulte/tres_facile.svg); }
+.recherche.avancee #Facile + label { background-image: url(../img/difficulte/facile.svg); }
+.recherche.avancee #Moyenne + label { background-image: url(../img/difficulte/moyenne.svg); }
+.recherche.avancee #Difficile + label { background-image: url(../img/difficulte/difficile.svg); }
+
+/* Régimes spéciaux */
+.recherche.avancee #Veggie + label { background-image: url(../img/regimes/veggie.svg); }
+.recherche.avancee #Vegan + label { background-image: url(../img/regimes/vegan.svg); }
+.recherche.avancee #Halal + label { background-image: url(../img/regimes/halal.svg); }
+.recherche.avancee #Casher + label { background-image: url(../img/regimes/casher.svg); }
+
+/* Allergènes */
+.recherche.avancee #Lactose + label { background-image: url(../img/allergenes/lactose.svg); }
+.recherche.avancee #Gluten + label { background-image: url(../img/allergenes/gluten.svg); }
+.recherche.avancee #Fructose + label { background-image: url(../img/allergenes/fructose.svg); }
+.recherche.avancee #Arachides + label { background-image: url(../img/allergenes/arachides.svg); }
+.recherche.avancee #Oeufs + label { background-image: url(../img/allergenes/oeufs.svg); }
+.recherche.avancee #Sesame + label { background-image: url(../img/allergenes/sesame.svg); }
+.recherche.avancee #Ombelliferes + label { background-image: url(../img/allergenes/ombelliferes.svg); }
+.recherche.avancee #Composes + label { background-image: url(../img/allergenes/composes.svg); }
+.recherche.avancee #Crustaces + label { background-image: url(../img/allergenes/crustaces.svg); }
+.recherche.avancee #Soja + label { background-image: url(../img/allergenes/soja.svg); }
+
+/* Types de plats */
+.recherche.avancee #amusegueule + label { background-image: url(../img/icones-plats/amuse-gueule.svg); }
+.recherche.avancee #entree + label { background-image: url(../img/icones-plats/entree.svg); }
+.recherche.avancee #boisson + label { background-image: url(../img/icones-plats/boisson.svg); }
+.recherche.avancee #plat + label { background-image: url(../img/icones-plats/plat_principal.svg); }
+.recherche.avancee #accompagnement + label { background-image: url(../img/icones-plats/garniture.svg); }
+.recherche.avancee #sauce + label { background-image: url(../img/icones-plats/sauce.svg); }
+.recherche.avancee #dessert + label { background-image: url(../img/icones-plats/dessert.svg); }
+.recherche.avancee #confiserie + label { background-image: url(../img/icones-plats/confiserie.svg); }
+
+/* Continents */
+.africa { background-image: url(../img/continents/afrique.svg); }
+.amecentral { background-image: url(../img/continents/amerique_centrale.svg); }
+.amenord { background-image: url(../img/continents/amerique_du_nord.svg); }
+.amesud { background-image: url(../img/continents/amerique_du_sud.svg); }
+.asie { background-image: url(../img/continents/asie.svg); }
+.europe { background-image: url(../img/continents/europe.svg); }
+.oceanie { background-image: url(../img/continents/oceanie.svg); }
+.init { background-image: url(../img/continents/initial.svg); }
+
+/* ========== PAGE RECETTE ========== */
+/* Allergènes */
+.allergenes #Arachides + label { background-image: url(../img/allergenes/arachides.svg); background-size: 40px 40px;}
+.allergenes #Composes + label { background-image: url(../img/allergenes/composes.svg); background-size: 40px 40px;}
+.allergenes #Crustaces + label { background-image: url(../img/allergenes/crustaces.svg); background-size: 40px 40px;}
+.allergenes #Fructose + label { background-image: url(../img/allergenes/fructose.svg); background-size: 40px 40px;}
+.allergenes #Gluten + label { background-image: url(../img/allergenes/gluten.svg); background-size: 40px 40px;}
+.allergenes #Lactose + label { background-image: url(../img/allergenes/lactose.svg); background-size: 40px 40px;}
+.allergenes #Oeufs + label { background-image: url(../img/allergenes/oeufs.svg); background-size: 40px 40px;}
+.allergenes #Ombelliferes + label { background-image: url(../img/allergenes/ombelliferes.svg); background-size: 40px 40px;}
+.allergenes #Sesame + label { background-image: url(../img/allergenes/sesame.svg); background-size: 40px 40px;}
+.allergenes #Soja + label { background-image: url(../img/allergenes/soja.svg); background-size: 40px 40px;}
+.allergenes #Vegan + label { background-image: url(../img/regimes/vegan.svg); background-size: 40px 40px;}
+.allergenes #Veggie + label { background-image: url(../img/regimes/veggie.svg); background-size: 40px 40px;}

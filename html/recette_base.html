@@ -1,0 +1,569 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Pâté aux coings</title>
+		
+		<!-- Grille responsive -->
+		<link type="text/css" rel="stylesheet" href="../styles/grille.css" />
+		
+		<!-- Interface utilisateur (style et icônes) -->
+		<link type="text/css" rel="stylesheet" href="../styles/recette.css" />
+		<link type="text/css" rel="stylesheet" href="../styles/slides.css" />
+		<link type="text/css" rel="stylesheet" href="../styles/tuiles.css" />
+		<link type="text/css" rel="stylesheet" href="../styles/interface_recherche.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+		<!-- Images -->
+		<link type="text/css" rel="stylesheet" href="../styles/icones.css" /><!-- Set d'icônes -->
+		<link rel="icon" type="image/png" href="../img/logo/favicon.png" /><!-- Favicon -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		
+		<!-- jQuery -->
+		<script src="../js/vendor/jquery-1.8.2.js"></script>
+		
+		<!-- Infobulles - Tirées de : Opentip v2.0 ( www.opentip.org) -->
+		<link href="../styles/opentip.css" rel="stylesheet" type="text/css" />
+		<script src="../js/opentips.js"></script>
+		<script src="../js/opentip-adapter-jquery.js"></script>
+		
+		<!-- Récupérateur du glossaire de termes -->
+		<script src="../js/recupGlossaire.js"></script>
+		
+		<!-- Slider suggestions recettes - Tiré de : jQuery OwlCarousel v1.26 - Copyright (c) 2013 Bartosz Wojciechowski -->
+		<script src="../js/suggestionRecettes.js"></script>
+		<link type="text/css" rel="stylesheet" href="../styles/suggestion-recettes.css" />
+	</head>
+	
+	<body class="fond-recette">
+		<div id="wrap">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="accueil.html#ecran1"><i class="fa fa-search fa-1x" aria-hidden="true"></i>  Recherche simple</a></li>
+						<li><a href="accueil.html#ecran2"><i class="fa fa-sliders fa-1x" aria-hidden="true"></i>  Recherche avancée</a></li>
+						<li><a href="accueil.html#ecran3"><i class="fa fa-globe fa-1x" aria-hidden="true"></i>  Recettes du monde</a></li>
+						<li><a href="accueil.html#ecran4"><i class="fa fa-magic fa-1x" aria-hidden="true"></i>  Wizard</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="wrapper titre">
+				<div class="douze colonnes"><h1 class="titre recette">Pâté aux coings</h1></div>
+			</div>
+			
+			<div class="contenu recette">
+				<div class="corps recette">
+					<aside class="trois colonnes">
+						<div class="vignette">
+							<img src = "../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/>
+						</div>
+						
+						<div class="reglages">
+							
+							<div class="nombre-de-personnes">
+								<h3>Nombre de personnes</h3>
+								<!-- Nombre de personnes-->
+								<div><span class="nb-personnes">8</span></div>
+							</div>
+							
+							<!-- Règle de trois -->
+							<h3>Changer les quantités</h3>
+							<div class="changer-nombre">
+								<div class="boutons">
+									<div class="incrementer">+</div>
+									<div class="decrementer">-</div>
+								</div>
+								<input id="nombre-input" class="nombre-input" type="number" min="0" max="32" title="Nombre de personnes"></input>
+								<button id="changer-nombre" type="button" title="Changez les quantités !" />Changer</button>
+							</div>
+						</div>
+					</aside>
+					
+					<div class="sept colonnes" id="texte-recette">
+						<div class="infolabels">
+							<div class="infolabel circulaire"><a><img src="../img/difficulte/tres_facile.svg" alt="Très facile"/><div><p>Très facile</p></div></a></div>
+							<div class="infolabel circulaire"><a><img src="../img/cout/bon_marche.svg" alt="Bon marché"/><div><p>Bon marché</p></div></a></div>
+							<div class="infolabel circulaire"><a><img src="../img/infolabels/temps-preparation.svg" alt="40 minutes"><div><p>40 min.</p></div></img></a></div>
+							<div class="infolabel circulaire"><a><img src="../img/infolabels/temps-cuisson.svg" alt="30 minutes"><div><p>30 min.</p></div></img></a></div>
+						</div>
+						
+						<div class="texte recette">
+							<div>
+								<h2>Ingrédients</h2><!-- Pour 6 personnes -->
+								
+								<ul>
+									<li>3 coings (2 peuvent suffire s'ils sont gros)</li>
+									<li>5 cuillères à soupe de sucre</li>
+									<li>15 cl de crème fraîche</li>
+									<li>2 pâtes à tarte (faites-les vous même, c'est meilleur! ;) )</li>
+								</ul>
+							</div>
+						
+							<div>
+								<h2>Préparation de la recette</h2>
+								<p>Pelez et <def>coupez</def> les coings en tranches très fines, elles cuiront plus vite. Avec un robot, c'est plus facile (c'est un fruit très dur).
+								<def>Mélangez</def> les tranches avec du sucre et laissez reposer au moins une demi heure.</p>
+								<p>Préparez une des pâtes dans un moule à tarte, <def>mouillez</def> et étalez les tranches dessus, en ressoupoudrant de sucre. Placez la deuxième pâte sur le dessus
+								faites un trou au milieu de celle-ci et placer au four 40 mn (préalablement préchauffé thermostat 8-9).</p>
+								<p>Sortez du four. Découpez le couvercle et retournez-le sur une assiette. Etalez la crème fraîche sur le dessus en faisant pénétrer (quantité à votre appréciation). Remettez le couvercle.</p>
+								<p>Servez chaud ou froid.</p>
+								
+								<h3>Remarques</h3>
+								<p>Je n'ai pas indiqué de quantité, vous laissant juge des quantités de sucre et de crème.
+								Goûtez un morceau du fruit cru et vous verrez...</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Allergènes présents (prototype) -->
+					<div class="deux colonnes">
+						<div class="voir allergenes">
+							<h3>Allergènes présents</h3>
+							<div>
+								<ul>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Arachides" /><label for="Arachides">Arachides</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Composes" /><label for="Composes">Composés</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Crustaces" /><label for="Crustaces">Crustacés</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Gluten" /><label for="Gluten">Gluten</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Fructose" /><label for="Fructose">Fructose</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Lactose" /><label for="Lactose">Lactose</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Oeufs" /><label for="Oeufs">Oeufs</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Ombelliferes" /><label for="Ombelliferes">Ombellifères</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Sesame" /><label for="Sesame">Sésame</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Soja" /><label for="Soja">Soja</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Vegan" /><label for="Vegan">Végétalien</label></a></li>
+									<li><a><input class="bouton voir allergenes" type="checkbox" name="Allergene" id="Veggie" /><label for="Veggie">Végétarien</label></a></li>
+								</ul>
+							</div>
+							<div id="checked-items"></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- Fin du texte de la recette -->
+			
+			<div id="slider">
+				<div class="titre suggestions corps">
+					<h1>Vous aimerez peut-être...</h1>
+					<div class="customNavigation">
+						<a class="btn prev">Previous</a>
+						<a class="btn play">Autoplay</a>
+						<a class="btn stop">Stop</a>
+						<a class="btn next">Next</a>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="span12">
+								<div class="owl-carousel" id="owl-demo">
+									<div class="item">
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 1 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 2 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 3 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 4 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 5 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 6 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 7 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 8 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 9 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 10 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 11 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 12 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 13 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 14 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 15 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item"><!-- Tuile 16 -->
+										<div class="meta-tuile">
+											<div class="conteneur-tuile" >
+												<div class="tuile transition">
+													<h3 class="transition">Pâté aux coings</h3>
+													<div class="image-tuile circulaire transition"><img src="../img/icones-plats/dessert-couleur.svg" title="Mmmh, un dessert!" alt="Dessert"/></div>
+													<div class="infolabels">
+														<div class="infolabel circulaire budget_image"><img src="../img/cout/bon_marche.svg" title="Bon marché" alt="Bon marché" /></div>
+														<div class="infolabel circulaire difficulté_image"><img src="../img/difficulte/facile.svg"  title="Facile" alt="Facile" /></div>
+														<div class="infolabel circulaire temps_image"><img src="../img/infolabels/temps.svg" title="10 minutes" alt="10 minutes"><p>10 min.</p></img></div>
+													</div>
+													<div class="lien-cadre transition"><a href="#" class="lien">Voir la recette</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div style="height: 100px;"></div>
+			
+			<footer id="footer">
+				<div class="logo-footer"><img src="../img/logo/accueil-bleu.svg" alt="TocTocToque" /></div>
+				<div class="nous"><p>Par les étudiants LING 2 MS/LA, 2016</p></div>
+			</footer>
+			</div>
+		
+		<script type="text/javascript">
+			
+			/*  =======================================================================================
+				                                    Nombre de personnes
+			    =======================================================================================  */
+				var nbPersonnes = $(".nb-personnes").text();
+				var image_personnes = "<img src=\"../img/infolabels/personne.png\" />";
+				var images = "";
+				
+				// Ajout du bon nombre de personnes
+				for (var i = 0; i < nbPersonnes; i++) {
+					images += image_personnes;
+				}
+				$(".nombre-input").val(nbPersonnes);
+				
+				$(".nb-personnes").html(images + "<div>" + nbPersonnes + "</div>" );
+			
+			/*  =======================================================================================
+				                             Input de nombre (règle de trois)
+			    =======================================================================================  */
+			var numInput;
+			var number = 0;
+			var numberInput = 0;
+
+			$(".incrementer").on("click",function(){
+				numInput = $(this).parent(".boutons").siblings("input");
+				number = parseInt($(numInput).val());
+				if (isNaN(number)){
+					number = 0;
+				}
+				$(numInput).val(parseInt(number)+1);
+				numInput = null; number = 0; numInput = 0;
+			});
+
+			$(".decrementer").on("click",function(){
+				numInput = $(this).parent(".boutons").siblings("input");
+				number = parseInt($(numInput).val());
+
+				if ( (isNaN(number) ) || (number < 0) ) {
+					number = 0;
+					$(numInput).val(number);
+				} else if ($(numInput).val() > 0) {
+					$(numInput).val(parseInt(number)-1);
+				}
+				numInput = null; number = 0; numInput = 0;
+			});
+			
+			/*  =======================================================================================
+				                               Ajout & retrait d'allergènes
+			    =======================================================================================  */
+			var checks = 0;
+			$(document).ready(function(){
+				$(function() {
+					$('input[type=checkbox][name=Allergene]').click(function() {
+						var checkboxId = $(this).attr('id');
+						var allergene = $('label[for="' + checkboxId + '"]').text();
+						if (checks > 0) {allergene = ', ' + allergene}
+						if ($(this).is(':checked')) {
+							$('#checked-items').append(allergene);
+							checks++;
+						}
+						else {
+							$('#checked-items').html($('#checked-items').text().replace(allergene, ''));
+						}
+					});
+				});
+			});
+
+			/*  =======================================================================================
+				                                  Infobulles glossaire
+				=======================================================================================  */
+			
+			// Pour le contenu du glossaire, voir '../js/recupGlossaire.js'
+			
+			// Pour chaque élément présent sur la page sous les balises <def>
+			
+			Opentip.styles.ttt = {
+				"extends": "standard",
+				className: "ttt",
+				background: [[0, "rgba(255, 228, 196, 0.8)"], [0.5, "rgba(255, 228, 197, 0.9)"], [0.5, "rgba(255, 223, 191, 0.7)"], [1, "rgba(255, 255, 255, 0.7)"]],
+				borderColor: "#e74536",
+				closeButtonCrossColor: "rgba(0, 0, 0, 0.2)",
+				borderRadius: 15,
+				closeButtonRadius: 10,
+				closeButtonOffset: [8, 8],
+				borderRadius: 13,
+				stem: "top",
+				shadowColor: "rgba(0, 0, 0, 0.4)",
+				stemLength: 12,
+				stemBase: 20
+			},
+			
+			$("def").each(function(){
+		
+			var clef = ($(this).text()).toLowerCase();
+		
+				if (glossaireFlechi.hasOwnProperty(clef)) {
+					
+					// Clés -> les lemmes ; Valeurs -> les définitions
+					var termeFlechi = clef.trim();
+					var lemme = glossaireFlechi[termeFlechi];
+					var def = glossaire[lemme];
+					
+					$(this).toggleClass("terme");
+					
+					// dé-commenter la ligne ci-dessous si le reste ne marche pas
+					// $(this).prop('title', def);
+					
+					// Création et customisation de l'objet Opentip
+					var tooltip = new Opentip(
+						$(this),
+						def,
+						{
+							style: "ttt",
+							title: lemme,
+							offset: [ -159, 10 ]
+						}
+					);
+				}
+			});
+		</script>
+		
+		
+	</body>
+</html>

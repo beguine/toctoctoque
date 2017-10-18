@@ -1,0 +1,294 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,800');
+
+
+
+.wrapper-resultats {
+	padding-top: 90px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: auto 30px auto;
+}
+
+/*   ___________
+	|     ^     |
+	|     |     |
+	| <-300px-> |
+	|     |     |
+	|_____v_____|
+*/
+
+.meta-tuile {
+	width: 330px;
+	height: 330px;
+	float: left;
+	display: inline-block;
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+}
+
+.meta-tuile:hover {
+	height: 430px;
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+}
+
+.conteneur-tuile{
+	position: absolute;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tuile {
+    background-color: #fff;
+    bottom: 0;
+	box-sizing: border-box;
+    height: 300px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: 300px;
+	clear: both;
+}
+
+/*
+	Image de plat (ici, récupérée depuis une banque d'images aléatoires)
+	Circulaire avant le passage de la souris.
+*/
+
+.image-tuile {
+    background-color: rgba(231, 69, 54, 1);
+    background-size: cover;
+    height: 375px;
+    margin-left: -75px;
+    margin-top: -220px;
+    position: absolute;
+    width: 450px;
+	overflow: hidden;
+	float: right;
+}
+
+.image-tuile img {
+	height: 275px;
+	width: 275px;
+	margin: 200px 0 0 100px;
+}
+
+.tuile:hover {
+	 height: 400px;
+}
+
+.tuile:hover .image-tuile {
+	border-radius: 0px;
+}
+
+/* Typo */
+
+.tuile h3 {
+    color: rgba(231, 69, 54, 1);
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 166px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.tuile p {
+    color: rgba(0, 0, 0, .6);
+    font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 100%;
+    font-weight: normal;
+    margin-top: 205px;
+    position: absolute;
+    text-align: center;
+    z-index: 8;
+	visibility: hidden;
+}
+
+/*
+	Cercles contenant les infos de :
+		budget,
+		difficulté,
+		temps de préparation.
+		
+		INFOLABELS = la div de l'ensemble des icônes
+		INFOLABEL  = chacune de ces icônes
+
+		o  o              o  o              o  o
+     o   __   o        o        o        o        o
+    o   /_     o      o   O°°O    o     o    | /   o
+    o   \__    o      o   |__|   o      o    |/    o
+     o        o        o        o        o 10 min o 
+        o  o              o  o              o  o
+
+*/
+
+.tuile .infolabels {
+	display: inline;
+	font-family: 'Raleway', sans-serif;
+	height: 25px;
+	z-index: 10;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 195px;
+    position: absolute;
+}
+
+.tuile .infolabels .infolabel {
+	background: rgba(231, 69, 54, 1);
+	color: #fff;
+	display: inline-block;
+	height: 75px;
+	margin: 10.5px;
+	overflow: hidden;
+	text-align: center;
+	width: 75px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tuile .infolabels .infolabel img {
+	display: inline-block;
+	visibility: visible;
+	width: 75px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+.tuile .infolabels .infolabel p {
+	color: #fff;
+	font-size: 80%;
+	left: 200px;
+	margin-left: 27px;
+	margin-top: -10px; 
+	position: absolute;
+	text-shadow: 0.3px 0.3px 0px rgb(247, 195, 190),
+	             0.6px 0.6px 0px rgb(247, 195, 190),
+	             0.9px 0.9px 0px rgb(247, 195, 190),
+	             1.2px 1.2px 0px rgb(247, 195, 190);
+	top: 60px; 
+	z-index: 10;
+	visibility: visible;
+}
+
+
+/* 
+	==HOVER==
+	Changements de style au passagee de la souris
+*/
+
+.transition {
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+.tuile:hover {
+    height: 415px;
+    width: 300px;
+}
+
+.tuile:hover p {
+    visibility: visible;
+}
+
+.tuile:hover h3 {
+    background: rgba(231, 69, 54, 0.5);
+    color: #fff;
+    margin-top: 155px;
+    padding-bottom: 63px;
+	padding-top: 3px;
+}
+
+.tuile:hover h3 small {
+	color: #fff
+}
+
+.tuile:hover .lien-cadre {
+    display: inline;
+    margin-top: 360px;
+}
+
+.tuile:hover .image_circulaire {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+
+.tuile:hover .infolabels {
+	margin-top: 175px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+.tuile:hover p {
+	margin-top: 275px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+/*
+	Lien "VOIR LA RECETTE", dans un cadre <div> invisible
+	(apparaît au passage de la souris sur la tuile)
+	
+	______________________
+	|                     |
+	|   VOIR LA RECETTE   |
+	|_____________________|
+*/
+
+.lien-cadre {
+    display: none;
+	margin-top: 300px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.lien {
+    background-clip: padding-box;
+    border: 2px solid rgba(231, 69, 54, 1);
+    color: rgba(231, 69, 54, 1);
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+	        border-radius: 2px;
+	   -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+	        transition: 0.2s ease-out;
+	   -moz-transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+	    -ms-transition: 0.2s ease-out;
+         -o-transition: 0.2s ease-out;
+}
+
+.lien:hover {
+    background-color: rgba(231, 69, 54, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

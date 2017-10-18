@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Créer une recette | Toc Toc Toque</title>
+		<!-- Grille responsive -->
+		<link type="text/css" rel="stylesheet" href="../styles/grille.css" />
+		
+		<!-- Mise en page -->
+		<link type="text/css" rel="stylesheet" href="../styles/slides.css" />
+		<link type="text/css" rel="stylesheet" href="../styles/recette.css" />
+		
+		<!-- Interface utilisateur (style et icônes) -->
+		<link rel="icon" type="image/png" href="../img/logo/favicon.png" /><!-- Favicon -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		
+		<!-- jQuery -->
+		<script src="../js/vendor/jquery-1.8.2.js"></script>
+		
+	</head>
+	<body>
+		<body class="fond-recette creation">
+			<div id="wrap">
+				<header>
+					<nav>
+						<ul>
+							<li><a href="accueil.html#ecran1"><i class="fa fa-search fa-1x" aria-hidden="true"></i>  Recherche simple</a></li>
+							<li><a href="accueil.html#ecran2"><i class="fa fa-sliders fa-1x" aria-hidden="true"></i>  Recherche avancée</a></li>
+							<li><a href="accueil.html#ecran3"><i class="fa fa-globe fa-1x" aria-hidden="true"></i>  Recettes du monde</a></li>
+							<li><a href="accueil.html#ecran4"><i class="fa fa-magic fa-1x" aria-hidden="true"></i>  Wizard</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="wrapper titre">
+					<div class="douze colonnes">
+						<div id="titre">
+							<input type ="text" name="titre" placeholder="Titre de la recette">
+						</div>
+					</div>
+				</div>
+						
+				<form class="corps recette">
+					<div class="sept colonnes">
+						<div id="type-plat">
+							<h3>Type de plat</h3>
+							<form action="">
+								<label>Accompagnement</label><input type="radio" name="plat">
+								<label>Amuse-gueule</label><input type="radio" name="plat">
+								<label>Boisson</label><input type="radio" name="plat"> 
+								<label>Dessert</label><input type="radio" name="plat">
+								<label>Entrée</label><input type="radio" name="plat"> 
+								<label>Plat principal</label><input type="radio" name="plat">
+								<label>Sauce</label><input type="radio" name="plat">
+							</form>
+						</div>
+						
+						<div class="sept colonnes" id="texte-recette">
+							<div class="infolabels">
+								<div id="difficulte">
+									<h3>Difficulté</h3>
+									<form action="">
+										<label>Très facile</label><input type="radio" name="diff">
+										<label>Facile</label><input type="radio" name="diff">
+										<label>Moyenne</label><input type="radio" name="diff">
+										<label>Difficile</label><input type="radio" name="diff">
+									</form>
+								</div>
+								
+								<div id="cout">
+									<h3>Coût</h3>
+									<form action="">
+										<label>Bon marché</label><input type="radio" name="cout">
+										<label>Moyen</label><input type="radio" name="cout">
+										<label>Assez cher</label><input type="radio" name="cout">
+									</form>
+								</div>
+								
+								<div id="temps-preparation">
+									<h3>Temps de préparation</h3>
+									<input type="number" name="mins"></input><label>minutes</label>
+								</div>
+								
+								<div id="temps-cuisson">
+									<h3>Temps de cuisson</h3>
+									<input type="number" name="mins"></input><label>minutes</label>
+								</div>
+							</div>
+							
+							<div id="note">
+								<h3>Note attribuée</h3>
+								<form action="">
+									<label>1</label>
+									<input type="radio" name="note">
+									<input type="radio" name="note">
+									<input type="radio" name="note">
+									<input type="radio" name="note">
+									<input type="radio" name="note">
+									<label>5</label>
+								</form>
+							</div>
+							
+							<div id="nombre-personnes">
+								<h3>Nombre de personnes</h3>
+								<input type="number" name="personnes" />
+							</div>
+							
+							<div id="pays">
+								<h3>Pays</h3>
+								<select>
+									<!-- Les codes des pays correspondent aux codes de la map "recettes du monde" -->
+									<option value="BD">Bangladesh</option>
+									<option value="BE" selected="selected">Belgique</option>
+									<option value="BF">Burkina Faso</option>
+									<option value="BG">Bulgarie</option>
+									<option value="BA">Bosnie Herzégovine</option>
+									<option value="BN">Brunei</option>
+									<option value="BO">Bolivie</option>
+									<option value="JP">Japon</option>
+									<option value="BI">Burundi</option>
+									<option value="BJ">Bénin</option>
+									<option value="BT">Bhoutan</option>
+									<option value="JM">Jamaïque</option>
+									<option value="BW">Botswana</option>
+									<option value="BR">Brésil</option>
+									<option value="BS">Bahamas</option>
+									<option value="BY">Bélarus</option>
+									<option value="BZ">Belize</option>
+									<option value="RU">Russie</option>
+									<option value="RW">Rwanda</option>
+									<option value="RS">Serbie</option>
+									<option value="TL">Timor Oriental</option>
+									<option value="TM">Turkménistan</option>
+									<option value="TJ">Tadjikistan</option>
+									<option value="RO">Roumanie</option>
+									<option value="GW">Guinée-Bissau</option>
+									<option value="GT">Guatémala</option>
+									<option value="GR">Grèce</option>
+									<option value="GQ">Guinée-Equatoriale</option>
+									<option value="GY">Guyana</option>
+									<option value="GE">Géorgie</option>
+									<option value="GB">Royaume-Uni</option>
+									<option value="GA">Gabon</option>
+									<option value="GN">Guinée</option> 
+									<option value="GM">Gambie</option>
+									<option value="GL">Groenland</option>
+									<option value="GH">Ghana</option>
+									<option value="OM">Oman</option>
+									<option value="TN">Tunisie</option>
+									<option value="JO">Jordanie</option>
+									<option value="HR">Croatie</option>
+									<option value="HT">Haïti</option>
+									<option value="HU">Hongrie</option>
+									<option value="HN">Honduras</option>
+									<option value="PR">Porto Rico</option>
+									<option value="PS">Palestine</option>
+									<option value="PT">Portugal</option>
+									<option value="PY">Paraguay</option>
+									<option value="PA">Panama</option>
+									<option value="PG">Papouasie-Nouvelle-Guinée</option>
+									<option value="PE">Pérou</option>
+									<option value="PK">Pakistan</option>
+									<option value="PH">Philippines</option>
+									<option value="PL">Pologne</option>
+									<option value="ZM">Zambie</option>
+									<option value="EH">Sahara Occidentale</option>
+									<option value="EE">Estonie</option>
+									<option value="EG">Egypte</option>
+									<option value="ZA">Afrique du Sud</option>
+									<option value="EC">Equateur</option>
+									<option value="IT">Italie</option>
+									<option value="VN">Vietnam</option>
+									<option value="SB">îles Salomon</option>
+									<option value="ET">Ethiopie</option>
+									<option value="SO">Somalie</option>
+									<option value="ZW">Zimbabwe</option>
+									<option value="ES">Espagne</option>
+									<option value="ER">Erythrée</option>
+									<option value="ME">Monténégro</option>
+									<option value="MD">Moldavie</option>
+									<option value="MG">Madagascar</option>
+									<option value="MA">Maroc</option>
+									<option value="UZ">Ouzbékistan</option>
+									<option value="MM">Myanmar</option>
+									<option value="ML">Mali</option>
+									<option value="MN">Mongolie</option>
+									<option value="MK">Macédoine</option>
+									<option value="MW">Malawi</option>
+									<option value="MR">Mauritanie</option>
+									<option value="UG">Ouganda</option>
+									<option value="MY">Malaysie</option>
+									<option value="MX">Mexique</option>
+									<option value="IL">Israël</option>
+									<option value="FR">France</option>
+									<option value="XS">Somaliland</option>
+									<option value="FI">Finlande</option>
+									<option value="FJ">Fidji</option>
+									<option value="FK">îles Falkland</option>
+									<option value="NI">Nicaragua</option>
+									<option value="NL">Pays-Bas</option>
+									<option value="NO">Norvège</option>
+									<option value="NA">Namibie</option>
+									<option value="VU">Vanuatu</option>
+									<option value="NC">Nouvelle Calédonie</option>
+									<option value="NE">Niger</option>
+									<option value="NG">Nigeria</option>
+									<option value="NZ">Nouvelle Zélande</option>
+									<option value="NP">Népal</option>
+									<option value="XK">Kosovo</option>
+									<option value="CI">Côte d'Ivoire</option>
+									<option value="CH">Suisse</option>
+									<option value="CO">Colombie</option>
+									<option value="CN">Chine</option>
+									<option value="CM">Cameroun</option>
+									<option value="CL">Chili</option>
+									<option value="XC">Chypre du Nord</option>
+									<option value="CA">Canada</option>
+									<option value="CG">Congo</option>
+									<option value="CF">République Centrafricaine</option>
+									<option value="CD">République Démocratique du Congo</option>
+									<option value="CZ">République Tchèque</option>
+									<option value="CY">Chypre</option>
+									<option value="CR">Costa Rica</option>
+									<option value="CU">Cuba</option>
+									<option value="SZ">Swaziland</option>
+									<option value="SY">Syrie</option>
+									<option value="KG">Kirghizistan</option>
+									<option value="KE">Kenya</option>
+									<option value="SS">Soudan du sud</option>
+									<option value="SR">Suriname</option>
+									<option value="KH">Cambodge</option>
+									<option value="SV">Salvador</option>
+									<option value="SK">Slovaquie</option>
+									<option value="KR">Corée du Sud</option>
+									<option value="SI">Slovénie</option>
+									<option value="KP">Corée du Nord</option>
+									<option value="KW">Koweït</option>
+									<option value="SN">Sénégal</option>
+									<option value="SL">Sierra Leone</option>
+									<option value="KZ">Kazakhstan</option>
+									<option value="SA">Arabie Saoudite</option>
+									<option value="SE">Suède</option>
+									<option value="SD">Soudan</option>
+									<option value="DO">République Dominicaine</option>
+									<option value="DJ">Djibouti</option>
+									<option value="DK">Danemark</option>
+									<option value="DE">Allemagne</option>
+									<option value="YE">Yémen</option>
+									<option value="DZ">Algérie</option>
+									<option value="US">Etats-Unis</option>
+									<option value="UY">Uruguay</option>
+									<option value="LB">Liban</option>
+									<option value="LA">Laos</option>
+									<option value="TW">Taïwan</option>
+									<option value="TT">Trinité et Tobago</option>
+									<option value="TR">Turquie</option>
+									<option value="LK">Sri Lanka</option>
+									<option value="LV">Lettonie</option>
+									<option value="LT">Lituanie</option>
+									<option value="LU">Luxembourg</option>
+									<option value="LR">Liberia</option>
+									<option value="LS">Lesotho</option>
+									<option value="TH">Thaïlande</option>
+									<option value="TF">Terres australes françaises</option>
+									<option value="TG">Togo</option>
+									<option value="TD">Tchad</option>
+									<option value="LY">Libye</option>
+									<option value="AE">Emirats Arabes Unis</option>
+									<option value="VE">Vénézuela</option>
+									<option value="AF">Afghanistan</option>
+									<option value="IQ">Iraq</option>
+									<option value="IS">Islande</option>
+									<option value="IR">Iran</option>
+									<option value="AM">Arménie</option>
+									<option value="AL">Albanie</option>
+									<option value="AO">Angola</option>
+									<option value="AR">Argentine</option>
+									<option value="AU">Australie</option>
+									<option value="AT">Autriche</option>
+									<option value="IN">Inde</option>
+									<option value="TZ">Tanzanie</option>
+									<option value="AZ">Azerbaïdjan</option>
+									<option value="IE">Irlande</option>
+									<option value="ID">Indonésie</option>
+									<option value="UA">Ukraine</option>
+									<option value="QA">Qatar</option>
+									<option value="MZ">Mozambique</option>
+								</select>
+							</div>
+							
+							<div id="themes">
+								<h3>Thèmes</h3>
+								<label>automne</label><input type="checkbox" name="theme">
+								<label>été</label><input type="checkbox" name="theme">
+								<label>fêtes de fin d'année</label><input type="checkbox" name="theme">
+								<label>halloween</label><input type="checkbox" name="theme">
+								<label>hiver</label><input type="checkbox" name="theme">
+								<label>pâques</label><input type="checkbox" name="theme">
+								<label>printemps</label><input type="checkbox" name="theme">
+								<label>saint-valentin</label><input type="checkbox" name="theme">
+							</div>
+							
+							<div id="ingredients">
+								<h3>Liste d'ingrédients</h3>
+								<textarea name="liste_ingredients" cols="60" rows="5" style="width:300px; height:100px;"></textarea>
+							</div>
+							
+							<div id="preparation">
+								<h3>Mode de préparation</h3>
+								<textarea name="liste_ingredients" cols="100" rows="10" style="width:500px; height:250px;"></textarea>
+							</div>
+						</div>
+						<button type="submit" title="Créer" alt="1, 2, 3, envoyez!">Créer</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="logo-footer"><img src="../img/logo/accueil-bleu.svg" alt="TocTocToque" /></div>
+			<div class="nous"><p>Par les étudiants LING 2 MS/LA, 2016</p></div>
+		</footer>
+	</body>
+</html>

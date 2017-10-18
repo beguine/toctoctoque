@@ -1,0 +1,416 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,800');
+
+#champ-input, #bouton-rech-av, #bouton-lancer {
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	max-width: 1080px;
+	background-color: transparent;
+}
+
+.wrapper-recherche {
+	margin: 15vh auto 0;
+	width: 100%;
+}
+
+#champ-input { transition: all 1.4s; margin-left: 20%; width: 50%; }
+.boutons-recherche { width: 117px; float: right; margin-right: calc(30% - 130px); text-align: right; }
+
+div.recherche {
+	padding: 0 4px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.recherche input {
+	height: 48px;
+	background-color: rgba(255, 255, 255, 1);
+	font-family: 'Raleway', sans-serif;
+	padding-left: 24px;
+	font-weight: 400;
+	font-size: 18px;
+	color: rgba(231, 69, 54, 1);
+	width: 95%;
+	border: none;
+	border-radius: 24px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: width .4s;
+	-ms-transition: width .4s;
+	-moz-transition: width .4s;
+	-o-transition: width .4s;
+	transition: width .4s;
+}
+
+.recherche input:focus {
+	outline:none;
+	background-color: rgba(255, 255, 255, 1);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	color: rgba(198, 38, 21, 1);
+		-webkit-transition: width .4s;
+	  -ms-transition: width .4s;
+	 -moz-transition: width .4s;
+		-o-transition: width .4s;
+			transition: width .4s;
+}
+
+.recherche input::-webkit-input-placeholder {
+	font-weight: 200;
+	color: rgba(231, 69, 54, 1);
+}
+
+.recherche input::-moz-placeholder {
+	font-weight: 200;
+	color: rgba(231, 69, 54, 1);
+}
+
+.recherche input::-ms-input-placeholder {
+	font-weight: 200;
+	color: rgba(231, 69, 54, 1);
+}
+
+.recherche button,
+.recherche submit {
+	width: 48px;
+	height: 48px;
+	color: bisque;
+	border: none;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: rgba(231, 69, 54, 1);
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.recherche button:hover,
+.recherche button:focus,
+.recherche input[type=button]:hover,
+.recherche input[type=button]:focus {
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(198, 38, 21, 1);
+	outline: 0;
+}
+
+/* RECHERCHE AVANCÉE---------------------------------------------
+Toute la recherche avancée est contenue dans une section <form>
+-----------------------------------------------------------------*/
+form.recherche.avancee {
+	text-align: center;
+	background-color: rgb(0, 0, 0); /* Devient blanc si la transparence n'est pas prise en charge */
+	background-color: rgba(78, 38, 0, .6);
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	float: center;
+	box-sizing: border-box;
+	margin: 50px auto 0;
+	max-width: 1080px;
+	overflow: hidden;
+	padding-bottom: 40px;
+	padding: 0 20px;
+	position: relative;
+	width: 100%;
+	zoom: 1;
+}
+
+
+
+form.recherche.avancee::after {/* Fin du menu de recherche (calcul des dimensions des colonnes) */
+	content: "";
+	display: table;
+	clear: both;
+	padding: 5px; /* à ajuster à la marge des colonnes */
+}
+
+.recherche.avancee h1, h2 {
+	display: table;
+	text-align: left;
+	text-indent: 1em;
+	height: 1.6em;
+	width: 100%;
+	font-size: 18px;
+	color: white;
+	padding: 0;
+}
+
+.recherche.avancee input {
+	height: 48px;
+	width: 100%;
+	border: none;
+	border-radius: 0px;
+	margin-top: 0;
+	border-bottom: 1px solid rgba(231, 69, 54, .5);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .2);
+}
+
+.recherche.avancee h1 {
+	background: rgba(231, 69, 54, 1); 
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+.recherche.avancee h2 { background: rgba(231, 69, 54, .5); }
+
+/* Champs d'input de la recherche avancée
+--------------------------------------------*/
+
+.recherche.avancee input,
+.recherche.avancee input[type=number] {
+	height: 2.5em;
+	background-color: rgba(138, 223, 223); /* Couleur de secours */
+	background-color: rgba(231, 69, 54, .05);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: rgba(231, 69, 54, 1);
+	padding: 10px 5px 5px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid rgba(231, 69, 54, .5);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.recherche.avancee input:focus {
+	outline:none;
+	background-color: rgba(231, 69, 54, .1);
+	border-bottom: 4px solid rgba(231, 69, 54, .4);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: rgba(231, 69, 54, 1);
+}
+
+.recherche.avancee input::-webkit-input-placeholder,
+.recherche.avancee input[type=number]::-webkit-input-placeholder{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: rgba(255, 255, 255, .9);
+}
+
+.recherche.avancee input::-moz-placeholder,
+.recherche.avancee input[type=number]::-moz-placeholder {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: rgba(255, 255, 255, .9);
+}
+
+.recherche.avancee input::-ms-input-placeholder{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	color: rgba(255, 255, 255, .9);
+}
+
+/* 
+	CHAMP 'TEMPS DE PRÉPARATION'-----------------------
+	
+	---------------------------------------------------
+*/
+
+.recherche.avancee input[type=number] {
+	-moz-appearance:textfield;
+}
+
+.recherche.avancee input[type=number]::-webkit-inner-spin-button,
+.recherche.avancee input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.recherche.avancee input[type=number]{
+	width: 50px;
+	display: inline-block;
+}
+
+.recherche.avancee button {
+	border: none;
+	background: #b22222;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 6px;
+	width: 200px;
+	color: white;
+	margin-left: 25px;
+	box-shadow: 0 3px 2px 0 rgba(0,0,0,0.2);
+}
+
+/* Boutons de sélection des valeurs
+*/
+
+.recherche.avancee .choix {
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	position: relative;
+	text-align: center;
+}
+
+.recherche.avancee .choix .bouton +label {
+	width: 64px;
+	height: 64px;
+	line-height: 141px;
+	font-size: 45%;
+}
+
+input[type=checkbox].bouton,
+input[type=radio].bouton {
+	display:none;
+	position: relative;
+}
+
+.bouton + label {
+	background-color: rgba(231, 69, 54, .4);
+	color: rgba(255, 255, 255, .4);
+	padding: 0;
+	margin: 1.4em 5px;
+	display: inline-block;
+	cursor: pointer;
+	 -webkit-transition: all .4s;
+				transition: all .2s;
+}
+
+.bouton:checked:hover + label {
+	background-color: rgba(231, 69, 54, .4);
+	color: rgba(231, 69, 54, .4);
+	-webkit-transition: all .2s;
+	  -ms-transition: all .2s;
+	 -moz-transition: all .2s;
+		-o-transition: all .2s;
+			transition: all .2s;
+	 -webkit-transform: scale(1);
+		  -ms-transform: scale(1);
+				transform: scale(1);
+			  box-shadow: none;
+		-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/* Symbole "check" apparaissant après le texte du label (image SVG) */
+.recherche.avancee .choix .bouton:checked + label::after {
+	content: url(../img/check-green.svg);
+	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+}
+
+/* Même chose quand on "dé-checke" */
+.recherche.avancee .choix .bouton + label::after {
+	content: url(../img/uncheck.svg);
+	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+}
+
+.bouton:checked + label {
+	background-color: rgba(231, 69, 54, 1);
+	color: rgba(231, 69, 54, 1);
+	-webkit-transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+			  transform: scale(1.1);
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+.recherche.avancee .lancer button {
+	background-color: rgba(231, 69, 54, 1);
+	color: rgba(231, 69, 54, .4);
+	color: white;
+	width: 100%;
+	height: 64px;
+	padding: 0;
+	float: right;
+	font-family: inherit;
+	font-size: 120%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, .2),
+				 2px 2px 0px rgba(0, 0, 0, .2),
+				 3px 3px 0px rgba(0, 0, 0, .2),
+				 4px 4px 0px rgba(0, 0, 0, .2),
+				 5px 5px 0px rgba(0, 0, 0, .2),
+				 6px 6px 0px rgba(0, 0, 0, .2);
+	margin: 50px 0 0;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 32px;
+	 -webkit-transition: all .4s;
+				transition: all .2s;
+}
+
+.recherche.avancee .lancer button:hover {
+	background-color: rgba(231, 69, 54, .4);
+	-webkit-transition: all .2s;
+	  -ms-transition: all .2s;
+	 -moz-transition: all .2s;
+		-o-transition: all .2s;
+			transition: all .2s;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+			  box-shadow: none;
+		 -moz-box-shadow: none;
+	  -webkit-box-shadow: none;
+}
+
+.recherche.avancee .lancer button:focus {
+	background-color: rgba(231, 69, 54, 1);
+	-webkit-transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+			  transform: scale(1.1);
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+.carte {
+	width: 100%;
+	height: 82vh;
+	text-align: center;
+	position: relative;
+}
+
+.groupe-focus {
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	left: 16px;
+}
+
+.focus {
+	background-color: rgba(236, 70, 129, 1);
+	border: none;
+	line-height: 141px;
+	text-indent: -9999px;
+	width: 64px;
+	height: 64px;
+	padding: 0;
+	margin: 5px auto;
+	display: inline-block;
+	cursor: pointer;
+	   -webkit-transition: all .2s;
+			   transition: all .2s;
+}
+
+.focus:focus {
+	background-color: rgba(255, 81, 47, 1);
+	display:inline-block;
+	-webkit-transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+			  transform: scale(1.1);
+	box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}

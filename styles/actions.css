@@ -1,0 +1,12 @@
+/*
+	Fonctionne avec actions.js
+*/
+
+/*  Affichage et masquage de div */
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}

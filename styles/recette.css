@@ -1,0 +1,653 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,800');
+
+body.fond-recette {
+	padding: 0;
+	font-family: Raleway, sans-serif;
+	overflow-y: scroll;
+	overflow-x: none;
+	background: #c66125 url(../img/bg/bois_orange.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+}
+
+.wrapper.titre {
+	margin: 100px 0 20px;
+}
+
+.wrapper.titre::after {
+	content: "";
+	display: table;
+	clear: both;
+	padding: 5px;
+}
+
+.titre.recette {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 400%;
+	color: rgba(255, 204, 153, 1);
+	background-color: none;
+	margin: 0 4%;
+	padding: 0;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, .2),
+	 2px 2px 0px rgba(0, 0, 0, .2),
+	 3px 3px 0px rgba(0, 0, 0, .2),
+	 4px 4px 0px rgba(0, 0, 0, .2),
+	 5px 5px 0px rgba(0, 0, 0, .2),
+	 6px 6px 0px rgba(0, 0, 0, .2),
+	 7px 7px 0px rgba(0, 0, 0, .2),
+	 8px 8px 0px rgba(0, 0, 0, .2),
+	 9px 9px 0px rgba(0, 0, 0, .2),
+	 10px 10px 0px rgba(0, 0, 0, .2);
+}
+
+.contenu.recette::after {
+	content: "";
+	display: table;
+	clear: both;
+	padding: 5px;
+}
+
+.corps {
+	background-color: rgba(255, 255, 255, .5);
+	margin: 0 4%;
+	border-radius: 5px;
+	display: inline-block;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .1),
+	 2px 2px 2px rgba(0, 0, 0, .1),
+	 3px 3px 2px rgba(0, 0, 0, .1),
+	 4px 4px 2px rgba(0, 0, 0, .1),
+	 5px 5px 2px rgba(0, 0, 0, .1),
+	 6px 6px 4px rgba(0, 0, 0, .1),
+	 7px 7px 4px rgba(0, 0, 0, .1),
+	 8px 8px 4px rgba(0, 0, 0, .1),
+	 9px 9px 8px rgba(0, 0, 0, .1),
+	 10px 10px 8px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .1),
+	 2px 2px 2px rgba(0, 0, 0, .1),
+	 3px 3px 2px rgba(0, 0, 0, .1),
+	 4px 4px 2px rgba(0, 0, 0, .1),
+	 5px 5px 2px rgba(0, 0, 0, .1),
+	 6px 6px 4px rgba(0, 0, 0, .1),
+	 7px 7px 4px rgba(0, 0, 0, .1),
+	 8px 8px 4px rgba(0, 0, 0, .1),
+	 9px 9px 8px rgba(0, 0, 0, .1),
+	 10px 10px 8px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .1),
+	 2px 2px 2px rgba(0, 0, 0, .1),
+	 3px 3px 2px rgba(0, 0, 0, .1),
+	 4px 4px 2px rgba(0, 0, 0, .1),
+	 5px 5px 2px rgba(0, 0, 0, .1),
+	 6px 6px 4px rgba(0, 0, 0, .1),
+	 7px 7px 4px rgba(0, 0, 0, .1),
+	 8px 8px 4px rgba(0, 0, 0, .1),
+	 9px 9px 8px rgba(0, 0, 0, .1),
+	 10px 10px 8px rgba(0, 0, 0, .1);
+}
+
+.corps::after {
+	content: "";
+	display: table;
+	clear: both;
+	padding: 5px;
+}
+
+.vignette img {
+	width: 100%;
+	background-color: rgba(231, 69, 54, 1);
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
+	border-radius: 5px 0 0 0;
+}
+
+.reglages,
+.voir.allergenes {
+	background-color: rgb(0, 0, 0); /* Devient blanc si la transparence n'est pas prise en charge */
+	background-color: rgba(255, 204, 153, .5);
+	border-radius: 0 0 5px 5px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
+	box-sizing: border-box;
+	margin: 0;
+	max-width: 1080px;
+	overflow: hidden;
+	padding: 0 0 10px;
+	position: relative;
+	width: 100%;
+	zoom: 1;
+	display: table;
+}
+
+.reglages h3,
+.voir.allergenes h3 {
+	display: table;
+	text-align: left;
+	text-indent: 1em;
+	height: 1.6em;
+	width: 100%;
+	font-size: 18px;
+	color: white;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(231, 69, 54, 1);
+}
+
+.voir.allergenes h3 {
+	font-size: 15px;
+}
+
+.reglages .nombre-de-personnes {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.reglages .nombre-de-personnes span {
+	margin: 70px 0 0;
+}
+
+.reglages .nb-personnes img {
+	display: inline-block;
+	height: 36px;
+	margin: 3px;
+}
+
+.reglages .nombre-de-personnes h3 {
+	margin-bottom: 0px;
+}
+
+.reglages .nb-personnes div {
+	display: inline-block;
+	height: 36px;
+	width: 36px;
+	margin: 3px;
+	background-color: rgba(231, 69, 54, 1);
+	border-radius: 50%;
+	color: bisque;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+	font-size: 150%;
+	transform: translateY(-18px);
+}
+
+.reglages .changer-nombre {
+	margin: 1em 40%;
+	max-width: 650px;
+	position: relative;
+	width: 30%;
+}
+
+.reglages .changer-nombre input {
+	background-color: rgba(255, 255, 255, 1);
+	border: none;
+	border-right: 0;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	overflow: hidden;
+	height: 63px;
+	width: 63px;
+	border-radius: 10px;
+	padding: .15em .5em .15em .5em;
+	position: relative;
+	transition: .5s ease all;
+	z-index:0;
+	-moz-appearance:textfield;
+}
+	
+.reglages .changer-nombre input::-webkit-outer-spin-button,
+.reglages .changer-nombre input::-webkit-inner-spin-button {
+	display: none;
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.reglages .changer-nombre input:focus,
+.reglages .changer-nombre input:active {
+	box-shadow: 0 0 1rem rgba(231, 69, 54, .8);
+	border: 1px solid rgba(231, 69, 54, 1);
+	outline: none;
+	transition: .3s ease all;
+}
+
+.reglages .changer-nombre button {
+	background-color: rgba(231, 69, 54, 1);
+	border-bottom: 4px solid;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	border-radius: 5px;
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+	border-color: rgba(198, 38, 21, 1);
+	height: 30px;
+	color: bisque;
+	font-size: 0.6em;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.reglages .changer-nombre button:hover {
+	background-color: rgba(198, 38, 21, 1);
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+	border-color: rgba(157, 19, 4, 1);
+}
+
+.reglages .changer-nombre button:focus {
+	background-color: rgba(157, 19, 4, 1);
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+	border-color: rgba(78, 7, 0, 1);
+}
+
+.reglages .incrementer,
+.reglages .decrementer {
+	background: rgba(231, 69, 54, 1);
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	font-size: 150%;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 26px;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: -3px;
+	margin-bottom: 3px;
+	width: 26px;
+	border-radius: 15%;
+	z-index: 2;
+	/* Désactivation de la sélection de texte */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;	 /* Chrome/Safari/Opera */
+	-khtml-user-select: none;	/* Konqueror */
+	-moz-user-select: none;	/* Firefox */
+	-ms-user-select: none;	 /* Internet Explorer/Edge */
+}
+
+.reglages .boutons {
+	float: left;
+	top: 1px;
+	position: absolute;
+	width: 26px;
+	z-index: 1;
+}
+
+.reglages .incrementer {
+	transform: translate(65px, 18px);
+}
+
+.reglages .decrementer {
+	transform: translate(-28px, -11px);
+}
+
+.reglages .incrementer:hover,
+.reglages .decrementer:hover {
+	background: background: rgba(231, 69, 54, .5);
+}
+
+.reglages .incrementer::selected,
+.reglages .decrementer::selected {
+	background: background: rgba(231, 69, 54, .5);
+}
+
+/* Voir les allergènes */
+
+.allergenes .boutons {
+	float: left;
+	top: 1px;
+	position: absolute;
+	width: 26px;
+	z-index: 1;
+}
+
+.voir.allergenes div {
+	padding: 0 20px 0;
+	background-color
+}
+
+.allergenes .bouton + label {
+	margin: 0;
+	width: 40px;
+	height: 40px;
+	text-indent: 52px;
+	line-height: 20px;
+}
+
+.allergenes .bouton:checked + label {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.allergenes .sel {
+	display: inline;
+	background-color: rgba(231, 69, 54, .4);
+	border: 1px solid rgba(231, 69, 54, 1);
+	border-radius: 5px;
+	padding: 0 5px 0;
+	color: rgba(255, 255, 255, 1);
+}
+
+.allergenes li,
+.allergenes ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: inline;
+}
+
+/* Infolabels en haut de la recette */
+.recette .infolabels {
+	text-align: right;
+	-ms-transform: translateY(-50px); /* IE 9 */
+	 	-webkit-transform: translateY(-50px); /* Safari */
+	transform: translateY(-50px);
+	margin-right: 50px;
+}
+
+.recette .infolabel {
+	background: rgba(231, 69, 54, 1);
+	background-size: 75px 75px;
+	display: inline-block;
+	height: 75px;
+	margin: 10.5px;
+	width: 75px;
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.recette .infolabel img {
+	width: 75px;
+	border-radius: 50%;
+}
+
+.recette .infolabel div {
+	width: 73px;
+	height: 110px;
+	background: rgba(255, 255, 255, 1);
+	-ms-transform: translate(1px, -75px); /* IE 9 */
+	-webkit-transform: translate(1px, -75x); /* Safari */
+	transform: translate(1px, -75px);
+	z-index: -1;
+	border-radius: 38px 38px 20px 20px;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.recette .infolabel div p {
+	position: absolute;
+	bottom: 0;
+	font-size: 78%;
+	font-weight: 500;
+	color: rgba(231, 69, 54, .4);
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	text-align: center;
+	text-indent: -6em;
+	-webkit-transition: all 0s 180s;
+	-moz-transition: all 0s 180s;
+	-o-transition: all 0s 180s;
+	transition: all 0s 180s;
+}
+
+.recette .infolabel:hover,
+.recette .infolabel a:active {
+	background: rgba(252, 109, 94, 1);
+	-ms-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.texte.recette {
+	margin-right: 5%;
+	transform: translateY(-100px);
+}
+
+.texte.recette h2, h3 {
+	color: rgba(231, 69, 54, 1);
+	text-indent: 0;
+	font-weight: 300;
+	font-size: 150%;
+}
+
+.texte.recette ul {
+	list-style: none;
+	padding: 0;
+}
+
+.texte.recette li {
+	padding-left: 3em;
+	padding-bottom: 0.25em;
+	padding-top: 0.25em;
+}
+
+.texte.recette li:before {
+	content: "\f0fe"; /* FontAwesome Unicode */
+	font-family: FontAwesome;
+	color: rgba(231, 69, 54, 1);
+	display: inline-block;
+	margin-left: -1.3em; /* same as padding-left set on li */
+	width: 1.3em; /* same as padding-left set on li */
+}
+
+.texte.recette li:after {
+	content: "";
+	clear: both;
+}
+
+.texte.recette li:hover {
+	background-color: rgba(231, 69, 54, .8);
+	color: rgba(255, 255, 255, 1);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.texte.recette li:hover:before {
+	color: rgba(255, 255, 255, 1);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.terme {
+	border-bottom: 2px dotted rgba(231, 69, 54, .8);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.terme:hover {
+	border-bottom: none;
+	background-color: rgba(231, 69, 54, .8);
+	color: bisque;
+	text-decoration: none;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.terme:after {
+	content: " ?";
+	font-weight: 800;
+	color: rgba(231, 69, 54, .8);
+	position: relative;
+	bottom: 1px;
+	font-size: .8em;
+	line-height: .8em;
+	vertical-align:super;
+	text-decoration:none;
+	border-bottom: none;
+}
+
+
+.titre.suggestions {
+	display: inline-block;
+	font-weight: 200;
+	color: #fff;
+	margin: 0 4%;
+	width: 92%;
+}
+
+.titre.suggestions.corps{
+	overflow: hidden;
+}
+
+.titre.suggestions h1 {
+	display: inline-block;
+	width: 50%;
+	font-size: 280%;
+	margin: 22px 4%;
+	color: rgba(231, 69, 54, 1);
+}
+
+#slider .customNavigation {
+	text-align: center;
+	display: inline-block;
+	float: right;
+	margin: 22px 2% 0 0;
+}
+
+#slider .customNavigation a {
+	display: inline-block;
+	background-color: rgba(231, 69, 54, 1);
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+	text-indent: -9999px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .8);
+	border-radius: 5px 0 0 0;
+	border-bottom: 4px solid;
+	border-right: 2px solid;
+	border-left: 2px solid;
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+	border-color: rgba(198, 38, 21, 1);
+}
+
+#slider .customNavigation a:hover {
+	background-color: rgba(231, 140, 54, 1);
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
+	border-color: rgba(198, 107, 21, 1);
+	cursor: pointer;
+}
+
+#slider .customNavigation a:active {
+	border: none;
+}
+
+a.btn.prev { background-image: url(../img/player/prev.svg); background-size: 40px 40px; background-repeat: no-repeat;}
+a.btn.play { background-image: url(../img/player/play.svg); background-size: 40px 40px; background-repeat: no-repeat;}
+a.btn.stop { background-image: url(../img/player/stop.svg); background-size: 40px 40px; background-repeat: no-repeat;}
+a.btn.next { background-image: url(../img/player/next.svg); background-size: 40px 40px; background-repeat: no-repeat;}
+
+.suggestions .lien-cadre {
+	display: inline;
+    margin-top: 245px;
+}
+
+.suggestions .meta-tuile:hover {
+	height: 330px;
+}
+
+.suggestions .tuile {
+    height: 300px;
+    width: 300px;
+}
+
+.suggestions .tuile:hover .image-tuile{
+	background: rgba(231, 140, 54, 1);
+}
+
+.suggestions .tuile .infolabels .infolabel {
+	background: rgba(231, 69, 54, 1);
+}
+
+.suggestions .tuile:hover .infolabels .infolabel {
+	background: rgba(231, 140, 54, 1);
+}
+
+.suggestions .tuile:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.suggestions .tuile:hover h3 {
+	background: rgba(231, 69, 54, 1);
+	padding-bottom: 115px;
+}
+
+.suggestions .tuile h3 {
+	margin-top: 150px;
+}
+
+.suggestions .tuile h3 small {
+	color: #fff;
+}
+
+.suggestions .tuile .lien-cadre {
+    display: inline;
+    margin-top: 360px;
+}
+
+.suggestions .tuile .image_circulaire {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+
+.suggestions .tuile .infolabels {
+	margin-top: 175px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+.suggestions .tuile p {
+	margin-top: 275px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+}
+
+@media (max-device-width: 1115px) {
+	.texte.recette {
+		transform: translateY(-20px);
+	}
+	
+	.recette .infolabels {
+		width: 100%;
+		-ms-transform: translate(-50px, -50px); /* IE 9 */
+		-webkit-transform: translate(-50px, -50px); /* Safari */
+		transform: translate(-50px, -50px);
+	}
+}
+
+@media (max-device-width: 930px) {
+		.recette .infolabels {
+		-ms-transform: translate(0px, -50px) scale(0.8); /* IE 9 */
+		-webkit-transform: translate(0px, -50px) scale(0.8); /* Safari */
+		transform: translate(0px, -50px) scale(0.8);
+	}
+}
